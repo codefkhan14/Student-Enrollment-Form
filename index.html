@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="icons8-registration-48.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="main1 page12">
+          <h1>Student Enrollment Form</h1>
+          <form id="form">
+            <table>
+              <tr>
+                <td class="tdd">Full Name</td>
+                <td class="atd ctd">
+                  <input type="text" id="name" class="input" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="tdd">Email</td>
+                <td class="atd ctd">
+                  <input type="text" id="email" class="input" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="tdd">Mobail</td>
+                <td class="atd ctd">
+                  <input type="text" id="mobail" class="input" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="tdd">DOB</td>
+                <td class="atd ctd"><input type="date" id="dob" /></td>
+              </tr>
+              <tr>
+                <td class="tdd">Gender</td>
+                <td class="atd ctd htd">
+                  <span
+                    ><input
+                      type="radio"
+                      id="male"
+                      class="g"
+                      name="gender"
+                    />Male</span
+                  >
+                  <span
+                    ><input
+                      type="radio"
+                      id="female"
+                      class="g"
+                      name="gender"
+                    />Female</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="tdd">Skills</td>
+                <td class="atd ctd htd">
+                  <span id="hss"
+                    ><input type="checkbox" id="html" class="s" />HTML</span
+                  >
+                  <span id="cs"
+                    ><input type="checkbox" id="css" class="s" />CSS</span
+                  >
+                  <span id="jss"
+                    ><input type="checkbox" id="js" class="s" />Javascript</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="atd">
+                  <input
+                    type="button"
+                    class="etd btd"
+                    id="submit"
+                    value="Submit"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="atd">
+                  <input type="button" class="etd rtd" id="reset" value="Reset" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+  
+        <div class="main2 page12" id="ctd">
+          <h1>Enrolled Students</h1>
+          <div id="result" class="result"></div>
+        </div>
+      </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
